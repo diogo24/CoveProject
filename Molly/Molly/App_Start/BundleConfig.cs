@@ -27,8 +27,16 @@ namespace Molly
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new ScriptBundle("~bundles/babylonjs").Include(
-                "~/"
+            bundles.Add(new StyleBundle("~/Content/BabylonViewCss/css").Include(
+                "~/Content/babylonViewCss.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/bundles/babylonViewScripts").Include(
+                "~/Scripts/hand.minified-1.2.js",
+                "~/Scripts/poly2tri.js",
+                "~/Scripts/oimo.js",
+                "~/Scripts/babylon.js",
+                "~/Scripts/babylonViewScripts/index.js"
                 ));
         }
     }

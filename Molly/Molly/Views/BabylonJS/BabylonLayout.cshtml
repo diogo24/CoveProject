@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Babylon - Basic scene</title>
+
+    @Styles.Render("~/Content/BabylonViewCss/css")
+    @Scripts.Render("~/bundles/babylonViewScripts")
+
+    @*<style>
+            html, body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+        </style>
+        <script src="scripts/hand.minified-1.2.js"></script>
+        <script src="scripts/poly2tri.js"></script>
+        <script src="scripts/oimo.js"></script>
+        <script src="scripts/babylon.js"></script>
+        <script src="scripts/babylonViewScripts/index.js"></script>*@
+    <script>
+        var ROOT = '@Url.Content("/")';
+    </script>
+</head>
+<body>
+    @RenderBody()
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
