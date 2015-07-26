@@ -270,6 +270,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\BabylonJS\Index.cshtml" />
     <Content Include="Views\BabylonJS\BabylonLayout.cshtml" />
+    <Content Include="Views\BabylonJS\Primer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

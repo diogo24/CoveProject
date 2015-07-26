@@ -13,5 +13,11 @@ namespace Molly.Controllers
         {
             return View();
         }
+
+        // GET: BabylonJS/Primer
+        public ActionResult Primer()
+        {
+            return View();
+        }
     }
 }
